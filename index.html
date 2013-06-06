@@ -1,84 +1,526 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="not-ie" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="description" content="business portfolio site template" />
+<meta name="keywords" content="business, marketing, corporate, app, software, marketing"/>
+<meta name="author" content="Tansh" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<title>Ninevillage</title>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Ninevillage.github.io : Ninevillage GitHub Pages" />
+<!--Fav and touch icons-->
+<link rel="shortcut icon" href="img/icons/favicon.ico">
+<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.html">
+<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.html">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<!--google web font-->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
 
-    <title>Ninevillage.github.io</title>
-  </head>
+<!--style sheet-->
+<link rel="stylesheet" media="screen" href="css/bootstrap.css"/>
+<link rel="stylesheet" media="screen" href="css/bootstrap-responsive.css"/>
+<link rel="stylesheet" media="screen" href="css/style-cyan.css"/>
 
-  <body>
+<!--jquery libraries / others are at the bottom-->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script src="js/modernizr.js" type="text/javascript"></script>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Ninevillage">View on GitHub</a>
+<!--elastislide carousel script starts-->
+<link rel="stylesheet" media="screen" href="css/elastislide.css"/>
+<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#carousel').elastislide({
+		imageW 		: 300,
+		margin		: 20,
+		border		: 0,
+		easing		: 'easeInBack'
+});
+});
+</script>
+<!--elastislide carousel script ends-->
 
-          <h1 id="project_title">Ninevillage.github.io</h1>
-          <h2 id="project_tagline">Ninevillage GitHub Pages</h2>
+<!--prettyphoto scripts starts-->
+<link rel="stylesheet" media="screen" href="css/prettyPhoto.css"/>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {	
+		$('a[data-rel]').each(function() {
+		$(this).attr('rel', $(this).data('rel'));
+		});
+		$("a[rel^='prettyPhoto[gallery1]']").prettyPhoto({
+		animation_speed: 'fast',
+		slideshow: 5000,
+		autoplay_slideshow: false,
+		opacity: 0.80,
+		show_title: false,
+		theme: 'pp_default', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
+		overlay_gallery: false,
+		social_tools: false,
+		changepicturecallback: function(){
+		var $pp = $('.pp_default');
+		if( parseInt( $pp.css('left') ) < 0 ){
+		$pp.css('left', 0 );
+		}
+		}
+		});	
+});
+</script>
+<!--prettyphoto scripts ends-->
 
-        </header>
+<!--flexslider scripts starts-->
+<link rel="stylesheet" media="screen" href="css/flexslider.css"/>
+<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+// Slider with thumbnail
+$(document).ready(function() {
+if($(window).width() < 959)
+{
+		$('#slider').flexslider({
+		directionNav: true,
+		controlNav: false,
+		});
+}
+else
+{
+		$('#thumb-slider').flexslider({
+		animation: "slide",
+		controlNav: false,
+		animationLoop: false,
+		slideshow: true,
+		directionNav: false,
+		controlNav: false,
+		itemWidth: 180,
+		itemMargin: 0,
+		asNavFor: '#slider'
+		});
+		$('#slider').flexslider({
+		animation: "slide",
+		controlNav: false,
+		directionNav: false,
+		animationLoop: true,
+		slideshow: true,
+		sync: "#thumb-slider"
+        });
+}
+});
+</script>
+<!--flexslider scripts ends-->
+
+</head>
+<body>
+
+<!-- header starts
+================================================== -->
+<section id="header" class="clearfix">
+  <div class="container">
+    <div class="row"> 
+      
+      <!--logo starts-->
+      <div class="span4 logo"><a href="http://ninevillage.de"><img src="img/logo.png" width="200" alt="logo"></a></div>
+      <!--logo ends-->
+      
+      <div class="span8 clearfix"> 
+        
+        <!--social starts-->
+        <ul class="social clearfix">
+          <li><a href="http://de.linkedin.com/in/ninevillage" target="_blank"><img src="img/icons/social-icon-linkedin.png" width="28" height="28" alt="icon"></a></li>
+          <li><a href="https://www.facebook.com/pages/Ninevillage/138205686272598" target="_blank"><img src="img/icons/social-icon-facebook.png" width="28" height="28" alt="icon"></a></li>
+          <li><a href="https://twitter.com/Ninevillage" target="_blank"><img src="img/icons/social-icon-twitter.png" width="28" height="28" alt="icon"></a></li>
+        </ul>
+        <!--social ends--> 
+        
+        <!--menu starts-->
+        <div id="smoothmenu" class="ddsmoothmenu">
+          <ul>
+            <li><a href="http://ninevillage.de" class="selected">Startseite</a></li>
+            <li><a href="/about">Über uns</a></li>
+          </ul>
+        </div>
+        <!--menu ends--> 
+        
+      </div>
     </div>
+  </div>
+</section>
+<!-- header ends
+================================================== --> 
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+<!-- content starts
+================================================== -->
+<section id="content" class="clearfix" style="display:none;"> 
+  
+  <!--slider-bg starts-->
+  <div id="slider-bg">
+    <div class="container">
+      <div class="row content-top"> 
+        
+        <!--slides starts-->
+        <div class="span12">
+          <div id="slider" class="flexslider">
+            <ul class="slides">
+              
+              <!--slide one starts-->
+              <li>
+                <div class="row">
+                  <div class="span6">
+                    <h2>Promise to create <br/>
+                      unique experiences for web and mobile</h2>
+                    <p>Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum qui blandit praesent feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
+                  </div>
+                  <div class="span6"> <img src="img/preview/tab-slide1.png" alt="slide"/> </div>
+                </div>
+              </li>
+              <!--slide one ends--> 
+              
+              <!--slide two starts-->
+              <li>
+                <div class="row">
+                  <div class="span6">
+                    <h2>Responsive interface <br/>
+                      became necessity for various devices</h2>
+                    <p> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui zzril delenit quam littera qui blandit praesent augue duis dolore te feugait nulla facilisi. </p>
+                  </div>
+                  <div class="span6"> <img src="img/preview/tab-slide2.png" alt="slide"/> </div>
+                </div>
+              </li>
+              <!--slide two ends--> 
+              
+              <!--slide three starts-->
+              <li>
+                <div class="row">
+                  <div class="span6">
+                    <h2>Easy to edit & <br/>
+                      customize templates for web and mobile</h2>
+                    <p>Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril in iis qui facit eorum delenit augue duis dolore te feugait nulla facilisi. </p>
+                  </div>
+                  <div class="span6"> <img src="img/preview/tab-slide3.png" alt="slide"/> </div>
+                </div>
+              </li>
+              <!--slide three ends--> 
+              
+              <!--slide four starts-->
+              <li>
+                <div class="row">
+                  <div class="span6">
+                    <h2>Awesome creativity<br/>
+                      & passion to develop apps for mobile devices</h2>
+                    <p> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui qui blandit praesent zzril gothica delenit augue duis dolore te feugait nulla facilisi. </p>
+                  </div>
+                  <div class="span6"> <img src="img/preview/tab-slide4.png" alt="slide"/> </div>
+                </div>
+              </li>
+              <!--slide four ends--> 
+              
+              <!--slide five starts-->
+              <li>
+                <div class="row">
+                  <div class="span6">
+                    <h2>Our cloud thinking <br/>
+                      process creates unlimited possibilities</h2>
+                    <p>Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te qui blandit praesent feugait nulla facilisi. </p>
+                  </div>
+                  <div class="span6"> <img src="img/preview/tab-slide5.png" alt="slide"/> </div>
+                </div>
+              </li>
+              <!--slide five ends-->
+              
+            </ul>
+          </div>
+        </div>
+        
+        <!--slides ends--> 
+        
+        <!--thumbnails starts-->
+        <div class="span12">
+          <div id="thumb-slider" class="flexslider">
+            <ul class="slides">
+              <li>
+                <div class="thumb-text clearfix"><img src="img/icons/slider-tab-icon1.png" width="64" height="64" alt="icon">
+                  <p>Awesome web templates</p>
+                </div>
+              </li>
+              <li>
+                <div class="thumb-text clearfix"><img src="img/icons/slider-tab-icon2.png" width="64" height="64" alt="icon">
+                  <p>Responsive layout</p>
+                </div>
+              </li>
+              <li>
+                <div class="thumb-text clearfix"><img src="img/icons/slider-tab-icon3.png" width="64" height="64" alt="icon">
+                  <p>Easy to customize </p>
+                </div>
+              </li>
+              <li>
+                <div class="thumb-text clearfix"><img src="img/icons/slider-tab-icon4.png" width="64" height="64" alt="icon">
+                  <p>State of art design</p>
+                </div>
+              </li>
+              <li>
+                <div class="thumb-text clearfix"><img src="img/icons/slider-tab-icon5.png" width="64" height="64" alt="icon">
+                  <p>Infinite modules</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--thumbnails ends--> 
+        
+      </div>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+  </div>
+  <!--slider-bg ends-->
+  
+  <div class="container"> 
+    
+    <!--features starts-->
+    <div class="row">
+      <div class="span12">
+        <h1>Unique experiences for <span class="color">web & mobile</span></h1>
+        <ul class="list-3col text-center">
+          <li>
+            <div class="icon-bg"><img src="img/icons/icon1-iphone.png" width="120" height="120" alt="icon"></div>
+            <h2>Responsive</h2>
+            Duis autem vel eum iriure qui  dolor est etiam in velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros. </li>
+          <li>
+            <div class="icon-bg"><img src="img/icons/icon1-leaf.png" width="120" height="120" alt="icon"></div>
+            <h2>Customizable</h2>
+            Autem vel eum praesent dolor in hendrerit in vulputate velit esse molestie consequat, at vero vel blandit illum dolore eu feugiat nulla.</li>
+          <li>
+            <div class="icon-bg"><img src="img/icons/icon1-create.png" width="120" height="120" alt="icon"></div>
+            <h2>Documented</h2>
+            Eodem modo typi qui nunc nobis videntur parum clari, fiant sollemnes  est ad minim usus  liber tempor option legentis in futurum.</li>
+        </ul>
+      </div>
     </div>
+    <!--features ends--> 
+    
+    <!--spacer here-->
+    <div class="spacer-40px"></div>
+    
+    <!--carousel starts-->
+    <div class="row">
+      <div class="span12"> 
+        
+        <!--icon and heading-->
+        
+        <h4 class="heading-icon clearfix"><img src="img/icons/heading-icon-1.png" width="40" height="40" alt="icon" class="icon-small-bg"> Features at a glance</h4>
+        
+        <!--carousel list starts-->
+        <div id="carousel" class="es-carousel-wrapper">
+          <div class="es-carousel">
+            <ul>
+              <li>
+                <div class="folio-thumb"><img src="img/preview/thumb-1.jpg" alt="image" /> <a href="img/preview/thumb-1.jpg" data-rel="prettyPhoto[gallery1]" title="This is title of Image" class="icon-zoom"></a></div>
+                <h5>Easy to use lorem interface</h5>
+                <p>Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum assum dolore eu feugiat nulla.</p>
+              </li>
+              <li>
+                <div class="folio-thumb"><img src="img/preview/thumb-2.jpg" alt="image" /> <a href="img/preview/thumb-2.jpg" data-rel="prettyPhoto[gallery1]" title="This is title of Image" class="icon-zoom"></a></div>
+                <h5>Cost effective ipsum amet</h5>
+                <p>Typi non habent vero claritatem insitam usus legentis in iis qui facit eorum volutpat est legere lius quod ullamcorper legentis legunt. </p>
+              </li>
+              <li>
+                <div class="folio-thumb"><img src="img/preview/thumb-3.jpg" alt="image" /> <a href="img/preview/thumb-3.jpg" data-rel="prettyPhoto[gallery1]" title="This is title of Image" class="icon-zoom"></a></div>
+                <h5>Clean layout for lorem</h5>
+                <p>Duis autem vel eum iriure dolor in congue velit hendrerit in vulputate velit esse dolore eu feugiat nulla facilisis at vero  congue nihil.</p>
+              </li>
+              <li>
+                <div class="folio-thumb"><img src="img/preview/thumb-4.jpg" alt="image" /> <a href="img/preview/thumb-4.jpg" data-rel="prettyPhoto[gallery1]" title="This is title of Image" class="icon-zoom"></a></div>
+                <h5>24x7 support on sit amet</h5>
+                <p>Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum assum dolore eu feugiat nulla.</p>
+              </li>
+              <li>
+                <div class="folio-thumb"><img src="img/preview/thumb-5.jpg" alt="image" /> <a href="img/preview/thumb-5.jpg" data-rel="prettyPhoto[gallery1]" title="This is title of Image" class="icon-zoom"></a></div>
+                <h5>Instant updation sit</h5>
+                <p>Typi non habent vero claritatem insitam usus legentis in iis qui facit eorum volutpat est legere lius quod ullamcorper legentis legunt. </p>
+              </li>
+              <li>
+                <div class="folio-thumb"><img src="img/preview/thumb-6.jpg" alt="image" /> <a href="img/preview/thumb-6.jpg" data-rel="prettyPhoto[gallery1]" title="This is title of Image" class="icon-zoom"></a></div>
+                <h5>Visually appealing dolor</h5>
+                <p>Duis autem vel eum iriure dolor in congue velit hendrerit in vulputate velit esse dolore eu feugiat nulla facilisis at vero  congue nihil.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--carousel list ends--> 
+        
+      </div>
+    </div>
+    <!--carousel ends--> 
+    
+    <!--spacer here-->
+    <div class="spacer-40px"></div>
+    
+    <!--row starts-->
+    <div class="row"> 
+      
+      <!--column one starts-->
+      <div class="span6">
+        <h4 class="heading-icon clearfix"><img src="img/icons/heading-icon-2.png" width="40" height="40" alt="icon" class="icon-small-bg"> Very powerful options built right in</h4>
+        <p>Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel sequitur mutationem illum dolore eu feugiat nulla.</p>
+        
+        <!--two column list (nested columns) starts-->
+        <div class="row">
+          <ul class="span3 list-checkmark">
+            <li>Easy to use lorem interface</li>
+            <li>Cost effective ipsum amet </li>
+            <li>Clean layout for lorem</li>
+          </ul>
+          <ul class="span3 list-checkmark">
+            <li>24x7 support on sit amet</li>
+            <li>Instant updation sit</li>
+            <li>Visually appealing dolor</li>
+          </ul>
+        </div>
+        <!--two column list starts--> 
+        
+        <a href="#">Learn more &raquo;</a> </div>
+      <!--column one ends--> 
+      
+      <!--column two starts-->
+      <div class="span6"> <img src="img/preview/img-window.png" alt="image"> </div>
+      <!--column two ends--> 
+      
+    </div>
+    <!--row ends--> 
+    
+    <!--spacer here-->
+    <div class="spacer-30px"></div>
+    
+    <!--box starts-->
+    <div class="row">
+      <div class="span12">
+        <div class="dark-box">
+          <h1><span class="color">Get started</span> today with a free trial!</h1>
+          <ul class="list-separator">
+            <li>14 days free trial <span class="separator">|</span></li>
+            <li> No credit card required <span class="separator">|</span> </li>
+            <li> <span class="color">$10/mo</span> after end of trial period</li>
+          </ul>
+          <a href="#" class="mybtn">Download</a> </div>
+      </div>
+    </div>
+    <!--box ends--> 
+    
+  </div>
+</section>
+<!-- content ends
+================================================== --> 
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-22997510-6");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+<!-- footer starts
+================================================== -->
+<footer id="footer" class="clearfix">
+  <div class="container"> 
+    
+    <!--row starts-->
+    <div class="row"> 
+      
+      <!--column one / social icon list starts-->
+      <div class="span2">
+        <ul class="social clearfix">
+          <li><a href="http://de.linkedin.com/in/ninevillage" target="_blank"><img src="img/icons/social-icon-linkedin.png" width="28" height="28" alt="icon"></a></li>
+          <li><a href="https://www.facebook.com/pages/Ninevillage/138205686272598" target="_blank"><img src="img/icons/social-icon-facebook.png" width="28" height="28" alt="icon"></a></li>
+          <li><a href="https://twitter.com/Ninevillage" target="_blank"><img src="img/icons/social-icon-twitter.png" width="28" height="28" alt="icon"></a></li>
+        </ul>
+      </div>
+      <!--column one ends--> 
+      
+      <!--column two starts-->
+      <div class="span2 text-center"> Auf Twitter folgen
+        <h5><a href="https://twitter.com/Ninevillage" target="_blank">@Ninevillage</a></h5>
+      </div>
+      <!--column two ends--> 
+      
+      <!--column three / twitter feed starts-->
+      <div class="span8">
+        <div id="twitter"></div>
+      </div>
+      <!--column three / twitter feed ends--> 
+      
+    </div>
+    <!--row ends--> 
+    
+    <!--spacer here-->
+    <div class="spacer-30px"></div>
+    
+    <!--row starts-->
+    <div class="row"> 
+      
+      <!--column one starts-->
+      <div class="span4">
+        <h5>Über Ninevillage</h5>
+        <p>Development for Future. Das ist unser Ziel.</p>
+        <img src="img/logo.png" width="148" height="41" alt="logo"> </div>
+      <!--column one ends--> 
+      
+      <!--column two starts-->
+      <div class="span4">
+        <h5>Aus unserem Blog</h5>
+        <ul class="list-unstyled">
+          <li><img src="img/icons/icon-32-create.png"  alt="image">
+            <h6>Noch kein Blog Eintrag vorhanden.</h6>
+            <span>01. Juni 2013 | <a href="https://github.com/NaxChefkoch" target="_blank">by NaxChefkoch</a></span> </li>
+        </ul>
+      </div>
+      <!--column two ends--> 
+      
+      <!--column three starts-->
+      <div class="span4">
+        <h5>Get in touch</h5>
+        <ul class="list-info">
+          <li><img src="img/icons/icon-18-address.png" alt="icon" style="margin-bottom:30px;">
+            Ninevillage<br/>
+            Hans-Porner-Str. 5<br/>
+            38126 Braunschweig</li>
+          <li><img src="img/icons/icon-18-phone.png" alt="icon">+(49) 531 295 89024</li>
+          <li><img src="img/icons/icon-18-mail.png" alt="icon"><a href="mailto:info@ninevillage.de">info@ninevillage.de</a></li>
+          <!--<li><img src="img/icons/icon-18-skype.png" alt="icon" class="mar-btm"><a href="#">http://skype.com/skypename</a></li>-->
+        </ul>
+      </div>
+      <!--column three ends--> 
+      
+    </div>
+    <!--row ends--> 
+    
+  </div>
+</footer>
+<!-- footer ends
+================================================== --> 
 
+<!-- copyright starts
+================================================== -->
+<section id="copyright" class="clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <p> © Copyright Ninevillage 2013. All rights reserved.</p>
+        
+        <!--copyright menu starts-->
+        <ul class="copyright-menu">
+          <li><a href="http://ninevillage.de">Startseite</a></li>
+          <li><a href="/impressum">Impressum</a></li>
+          <li><a href="/kontakt">Kontakt</a></li>
+        </ul>
+        <!--copyright menu ends--> 
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- copyright ends
+================================================== --> 
 
-  </body>
+<!--other jqueries required--> 
+<script src="js/bootstrap.js" type="text/javascript" ></script> 
+<script src="js/ddsmoothmenu.js" type="text/javascript" ></script> 
+<script src="js/twitter.js" type="text/javascript" ></script> 
+<script src="js/jquery.easing.1.3.js" type="text/javascript" ></script> 
+<script src="js/custom.js" type="text/javascript" ></script>
+</body>
 </html>
