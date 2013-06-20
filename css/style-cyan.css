@@ -76,6 +76,10 @@ iframe {
 body, h1, h2, h3, h4, h5, h6, .mybtn, .mybtn-color, .mybtn-small, .mybtn-small-color, label, input, button, select, textarea, input[type="text"], .submit, .ddsmoothmenu ul li a {
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
+body {
+	padding-bottom: 40px;
+	background: url(../img/patterns/body-bg.jpg) repeat #000;
+}
 em, blockquote p {
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -838,6 +842,8 @@ textarea:focus, input[type="text"]:focus, select:focus {
 	color: #242424;
 	font-weight: 600;
 	text-shadow: 0px 1px 0px #555;
+	position: fixed;
+	bottom: 0;
 }
 #copyright a {
 	color: #242424;
