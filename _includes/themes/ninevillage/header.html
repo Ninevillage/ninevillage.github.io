@@ -138,25 +138,18 @@ else
     <div class="row"> 
       
       <!--logo starts-->
-      <div class="span4 logo"><a href="http://ninevillage.de"><img src="assets/img/logo.png" width="200" alt="logo"></a></div>
+      <div class="span4 logo"><a href="{{ HOME_PATH }}"><img src="assets/img/logo.png" width="200" alt="logo"></a></div>
       <!--logo ends-->
       
       <div class="span8 clearfix"> 
         
         <!--social starts-->
-        <ul class="social clearfix">
-          <li><a href="http://de.linkedin.com/in/ninevillage" target="_blank"><img src="assets/img/icons/social-icon-linkedin.png" width="28" height="28" alt="icon"></a></li>
-          <li><a href="https://www.facebook.com/pages/Ninevillage/138205686272598" target="_blank"><img src="assets/img/icons/social-icon-facebook.png" width="28" height="28" alt="icon"></a></li>
-          <li><a href="https://twitter.com/Ninevillage" target="_blank"><img src="assets/img/icons/social-icon-twitter.png" width="28" height="28" alt="icon"></a></li>
-        </ul>
+        {% include themes/ninevillage/modules/social.html %}
         <!--social ends--> 
         
         <!--menu starts-->
         <div id="smoothmenu" class="ddsmoothmenu">
-          <ul>
-            <li><a href="http://ninevillage.de" class="selected">Startseite</a></li>
-            <li><a href="/ueber-uns">Über uns</a></li>
-          </ul>
+          {% include themes/ninevillage/modules/mainnav.html %}
         </div>
         <!--menu ends--> 
         

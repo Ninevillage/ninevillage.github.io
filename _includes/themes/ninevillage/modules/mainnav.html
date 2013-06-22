@@ -1,0 +1,7 @@
+<ul>
+	<!--<li><a href="{{ HOME_PATH }}" class="selected">Startseite</a></li>
+	<li><a href="/ueber-uns">Über uns</a></li>-->
+	{% assign pages_list = site.pages %}
+    {% assign group = 'navigation' %}
+    {% include JB/pages_list %}
+</ul>

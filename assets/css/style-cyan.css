@@ -846,6 +846,7 @@ textarea:focus, input[type="text"]:focus, select:focus {
 	text-shadow: 0px 1px 0px #555;
 	position: fixed;
 	bottom: 0;
+	z-index: 100;
 }
 #copyright a {
 	color: #242424;

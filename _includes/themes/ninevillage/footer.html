@@ -8,11 +8,7 @@
       
       <!--column one / social icon list starts-->
       <div class="span2">
-        <ul class="social clearfix">
-          <li><a href="http://de.linkedin.com/in/ninevillage" target="_blank"><img src="assets/img/icons/social-icon-linkedin.png" width="28" height="28" alt="icon"></a></li>
-          <li><a href="https://www.facebook.com/pages/Ninevillage/138205686272598" target="_blank"><img src="assets/img/icons/social-icon-facebook.png" width="28" height="28" alt="icon"></a></li>
-          <li><a href="https://twitter.com/Ninevillage" target="_blank"><img src="assets/img/icons/social-icon-twitter.png" width="28" height="28" alt="icon"></a></li>
-        </ul>
+        {% include themes/ninevillage/modules/social.html %}
       </div>
       <!--column one ends--> 
       
@@ -39,34 +35,19 @@
       
       <!--column one starts-->
       <div class="span4">
-        <h5>Über Ninevillage</h5>
-        <p>Development for Future. Das ist unser Ziel.</p>
-        <img src="assets/img/logo.png" width="148" height="41" alt="logo"> </div>
+        {% include themes/ninevillage/modules/about.html %}
+      </div>
       <!--column one ends--> 
       
       <!--column two starts-->
       <div class="span4">
-        <h5>Aus unserem Blog</h5>
-        <ul class="list-unstyled">
-          <li><img src="assets/img/icons/icon-32-create.png"  alt="image">
-            <h6>Noch kein Blog Eintrag vorhanden.</h6>
-            <span>01. Juni 2013 | <a href="https://github.com/NaxChefkoch" target="_blank">by NaxChefkoch</a></span> </li>
-        </ul>
+        {% include themes/ninevillage/modules/recentBlogPosts.html %}
       </div>
       <!--column two ends--> 
       
       <!--column three starts-->
       <div class="span4">
-        <h5>Get in touch</h5>
-        <ul class="list-info">
-          <li><img src="assets/img/icons/icon-18-address.png" alt="icon" style="margin-bottom:30px;">
-            Ninevillage<br/>
-            Hans-Porner-Str. 5<br/>
-            38126 Braunschweig</li>
-          <li><img src="assets/img/icons/icon-18-phone.png" alt="icon">+(49) 531 295 89024</li>
-          <li><img src="assets/img/icons/icon-18-mail.png" alt="icon"><a href="mailto:info@ninevillage.de">info@ninevillage.de</a></li>
-          <!--<li><img src="assets/img/icons/icon-18-skype.png" alt="icon" class="mar-btm"><a href="#">http://skype.com/skypename</a></li>-->
-        </ul>
+        {% include themes/ninevillage/modules/contactUs.html %}
       </div>
       <!--column three ends--> 
       
@@ -84,14 +65,10 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <p> © Copyright Ninevillage 2013. All rights reserved.</p>
+        {% include themes/ninevillage/modules/copyrights.html %}
         
         <!--copyright menu starts-->
-        <ul class="copyright-menu">
-          <li><a href="http://ninevillage.de">Startseite</a></li>
-          <li><a href="/impressum">Impressum</a></li>
-          <li><a href="/kontakt">Kontakt</a></li>
-        </ul>
+        {% include themes/ninevillage/modules/footerNav.html %}
         <!--copyright menu ends--> 
         
       </div>
