@@ -41,7 +41,7 @@ Here is CSS structure...
 	2.11 Slider and elasticide carousel's css are given separately.
 
 3. Media queries
-    		Note - Media queries for sliders / elastislide carousel are in their own stylesheet.
+    		Note - Media queries for sliders / elasticide carousel are in their own stylesheet.
 
 4. Browser fixes - IE 
 /*============================================================*/
@@ -76,12 +76,6 @@ iframe {
 body, h1, h2, h3, h4, h5, h6, .mybtn, .mybtn-color, .mybtn-small, .mybtn-small-color, label, input, button, select, textarea, input[type="text"], .submit, .ddsmoothmenu ul li a {
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
-
-body {
- 	padding-bottom: 40px;
- 	background: url(../img/patterns/body-bg.jpg) repeat #000;
-}
-
 em, blockquote p {
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -129,7 +123,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	color: #646464;
 }
 a {
-	color: #44b1d9;
+	color: #d95b44;
 	text-decoration: none;
 	cursor: pointer;
 	font-style: normal;
@@ -144,7 +138,7 @@ a:hover {
 	text-decoration: none;
 }
 .color {
-	color: #44b1d9 !important;
+	color: #d95b44 !important;
 	font-size: inherit !important;
 	font-weight: inherit !important;
 	text-transform: inherit !important;
@@ -185,10 +179,10 @@ a:hover {
 	font-size: 13px;
 }
 .mybtn-color, .mybtn-small-color {
-	background: #44b1d9;
+	background: #d95b44;
 }
 .mybtn:hover, .mybtn-small:hover {
-	background: #44b1d9;
+	background: #d95b44;
 }
 /*----------------------------------------*/
 /*----- 1.4 List styles -----*/
@@ -264,17 +258,17 @@ a:hover {
 /*----------------------------------------*/
 /*blockquote with line*/
 blockquote {
-	border-left: 5px solid #44b1d9;
+	border-left: 5px solid #d95b44;
 }
 blockquote p {
 	font-size: 14px;
-	color: #44b1d9;
+	color: #d95b44;
 	font-style: italic;
 	padding-bottom: 3px;
 	margin: 0;
 }
 blockquote.pull-right {
-	border-right: 5px solid #44b1d9;
+	border-right: 5px solid #d95b44;
 }
 /*----------------------------------------*/
 /*----- 1.7 Accordion -----*/
@@ -286,7 +280,7 @@ blockquote.pull-right {
 .accordion-heading {
 }
 .accordion-heading a {
-	color: #44b1d9;
+	color: #d95b44;
 	font-weight: 600;
 	outline: none;
 	text-shadow: none;
@@ -344,7 +338,7 @@ blockquote.pull-right {
 }
 /*icons with colored background*/
 .icon-bg {
-	background: #44b1d9;
+	background: #d95b44;
 	width: 120px;
 	height: 120px;
 	border-radius: 120px;
@@ -357,7 +351,7 @@ blockquote.pull-right {
 	margin: 0 auto 20px auto;
 }
 .icon-small-bg {
-	background: #44b1d9;
+	background: #d95b44;
 	width: 40px;
 	height: 40px;
 	border-radius: 40px;
@@ -561,7 +555,7 @@ blockquote.pull-right {
 }
 .table-th {
 	font-size: 24px;
-	color: #44b1d9;
+	color: #d95b44;
 	font-weight: bold;
 	display: inline;
 	line-height: 1em;
@@ -584,7 +578,7 @@ sup {
 }
 p.table-slug {
 	font-size: 11px;
-	color: #44b1d9;
+	color: #d95b44;
 	padding: 0;
 	margin-left: 20px;
 	display: block;
@@ -779,7 +773,7 @@ textarea:focus, input[type="text"]:focus, select:focus {
 	transition: all 0.3s ease;
 }
 .submit:hover {
-	background: #44b1d9;
+	background: #d95b44;
 }
 #result {
 	padding-left: 31%; /*width of label + 1% (padding-right of label) */
@@ -793,7 +787,7 @@ textarea:focus, input[type="text"]:focus, select:focus {
 	text-shadow: 0px 1px 0px #000;
 }
 #footer h5 a:hover {
-	color: #44b1d9;
+	color: #d95b44;
 }
 /*twitter feed*/
 #twitter {
@@ -844,8 +838,6 @@ textarea:focus, input[type="text"]:focus, select:focus {
 	color: #242424;
 	font-weight: 600;
 	text-shadow: 0px 1px 0px #555;
-	position: fixed;
-	bottom: 0;
 }
 #copyright a {
 	color: #242424;
@@ -910,7 +902,7 @@ textarea:focus, input[type="text"]:focus, select:focus {
 	display: block;
 }
 .ddsmoothmenu ul li a.menu_color {
-	color: #44b1d9 !important;
+	color: #d95b44 !important;
 }
 .ddsmoothmenu ul li a.selected, .ddsmoothmenu ul li a:hover {
 	background: #484848;
@@ -1168,6 +1160,8 @@ left: 0;
  width: 166px;
 }
 }
+
+
 
 /*============================================================*/
 /*---------- 4. BROWSER FIXES ----------*/

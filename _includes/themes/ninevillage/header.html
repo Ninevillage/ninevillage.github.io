@@ -7,14 +7,25 @@
 <!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<meta name="description" content="{% if page.description %} {{ page.description }} {% endif %}" />
-<meta name="keywords" content="{% if page.keywords %} {{ page.keywords }} {% endif %}"/>
-<meta name="author" content="{% if page.author %} {{ page.author }} {% else %}NaxChefkoch{% endif %}" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
 <title>{% if page.title %} {{ page.title }} | {% endif %}Ninevillage</title>
 
+{% if page.description %}
+	<meta name="description" content="{{ page.description }}" />
+{% endif %}
+{% if page.keywords %}
+	<meta name="keywords" content="{{ page.keywords }}"/>
+{% endif %}
+{% if page.author %}
+	<meta name="author" content="{{ page.author }}" />
+{% endif %}
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
 <!--Fav and touch icons-->
-<link rel="icon" type="image/png" href="assets/img/icons/nv.png" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<!--<link rel="icon" type="image/png" href="assets/img/icons/nv.png" />-->
 <link rel="apple-touch-icon" href="assets/img/icons/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="assets/img/icons/apple-touch-icon-72x72.html">
 <link rel="apple-touch-icon" sizes="114x114" href="assets/img/icons/apple-touch-icon-114x114.html">
@@ -36,12 +47,12 @@
 <script type="text/javascript" src="assets/js/jquery.elastislide.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-$('#carousel').elastislide({
-		imageW 		: 300,
-		margin		: 20,
-		border		: 0,
-		easing		: 'easeInBack'
-});
+	$('#carousel').elastislide({
+			imageW 		: 300,
+			margin		: 20,
+			border		: 0,
+			easing		: 'easeInBack'
+	});
 });
 </script>
 <!--elastislide carousel script ends-->
@@ -112,6 +123,10 @@ else
 });
 </script>
 <!--flexslider scripts ends-->
+
+<!-- atom & rss feed -->
+<link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
 </head>
 <body>
