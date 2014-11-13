@@ -1,0 +1,12 @@
+// Create a custom Cloud9 runner - similar to the Sublime build system
+// For more information see http://docs.c9.io:8080/#!/api/run-method-run
+{
+    "cmd" : [
+        "bash", 
+        "--login", 
+        "-c",
+        "cd $project_path && ls -al && jekyll serve --host $IP --port $port --watch"
+    ],
+    "info" : "Serve $project_path",
+    "env" : {}
+}

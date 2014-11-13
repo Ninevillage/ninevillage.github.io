@@ -1,0 +1,6 @@
+# ALL
+/*
+
+# Except
+!.gitignore
+!/runners/
