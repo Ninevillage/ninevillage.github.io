@@ -1,8 +1,71 @@
 ---
-layout: page
+layout: default
 title: Contact
 permalink: /contact/
 rightnav: true
 footernav: true
 weight: 50
 ---
+
+<div class="row">
+  <div class="col-md-12">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.963313961436!2d10.537369999999989!3d52.24405000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aff5ee38bc7069%3A0xbdcc69aaa9349035!2sHans-Porner-Stra%C3%9Fe+5%2C+38126+Braunschweig!5e0!3m2!1sde!2sde!4v1415878269133" 
+            width="100%" 
+            height="100%" 
+            frameborder="0" 
+            style="border:0"></iframe>
+  </div>
+</div>
+
+<div class="row voffset3">
+  <div class="col-md-10">
+    contact form coming soon
+    <form class="form-horizontal hidden">
+      <fieldset>
+        <legend>Contact</legend>
+        <div class="form-group">
+          <label for="inputName" class="col-lg-2 control-label">Name</label>
+          <div class="col-lg-10">
+            <input class="form-control" id="inputName" placeholder="Name" type="text" required autofocus>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+          <div class="col-lg-10">
+            <input class="form-control" id="inputEmail" placeholder="Email" type="text" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="textArea" class="col-lg-2 control-label">Message</label>
+          <div class="col-lg-10">
+            <textarea class="form-control" rows="3" id="textArea" required></textarea>
+            <span class="help-block"></span>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="col-lg-10 col-lg-offset-2">
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  
+  <div class="col-md-2">
+    <address>
+        <strong>Ninevillage</strong><br>
+        Hans-Porner-Str. 5<br>
+        38126 Braunschweig<br>
+        <abbr title="Phone">P:</abbr> +49 (531) 295-80038
+      </address>
+      <address>
+        <strong>Mohammed Neundorf</strong><br>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </address>
+  </div>
+</div>
+
+<!-- Contact Scripts -->
