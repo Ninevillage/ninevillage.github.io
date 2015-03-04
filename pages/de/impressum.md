@@ -6,9 +6,6 @@ footernav: true
 weight: 100
 ---
 
-> The following information (Impressum) is required under German law.
-> The following information is in german.
-
 **Angaben gemäß § 5 TMG**
 
 Ninevillage<br>

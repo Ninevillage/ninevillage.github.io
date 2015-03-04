@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-12">
       <ul class="list-unstyled">
-        <li class="pull-right"><a href="#top">Back to top</a></li>
+        <li class="pull-right"><a href="#top">Nach oben</a></li>
         <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
         {% assign pages = site.pages | sort:"weight"  %}
           {% for node in pages %}
@@ -20,7 +20,7 @@
   <hr>
   <div class="row">
     <div class="col-md-6">
-      <p>Copyright 2011-2014 Ninevillage. All Rights Reserved.</p>
+      <p>Copyright &copy; 2011-2015 Ninevillage. Alle Rechte Vorbehalten.</p>
     </div>
     <div class="col-md-6">
       <div class="pull-right">
@@ -29,3 +29,14 @@
     </div>
   </div>
 </footer>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#header').on('affixed.bs.affix', function() {
+      $('.content').css('margin-top', '92px')
+    });
+    $('#header').on('affixed-top.bs.affix', function() {
+      $('.content').css('margin-top', '0px')
+    });
+  });
+</script>
