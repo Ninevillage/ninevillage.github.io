@@ -7,6 +7,11 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.ninevillage.com" # the base hostname & protocol for your site
 twitter_username: Ninevillage
 github_username:  Ninevillage
+team:
+  matt:
+    email: mn@ninevillage.com
+  asin:
+    email: av@ninevillage.com
 
 # Build settings
 markdown: kramdown

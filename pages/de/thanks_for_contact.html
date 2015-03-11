@@ -5,6 +5,28 @@ permalink: /kontakt_gesendet/
 ---
 
 <div class="alert alert-success alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Kontaktnachricht versendet!</strong> Better check yourself, you're not looking too good.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <strong>Kontaktnachricht versendet!</strong>
+  <p>
+    Vielen Dank für Ihre Nachricht. Ihr Anliegen wird von uns so schnell wie 
+    möglich bearbeitet, daher bitten wir Sie um etwas Geduld.
+  </p>
+  <p>
+    Viele Grüße wünscht Ihnen das Ninevillage Team.
+  </p>
 </div>
+
+<div class="alert alert-info" role="alert">
+  <strong>Hinweis!</strong> Sie werden nach 10 Sekunden weitergeleitet. Sollten 
+  Sie nicht weitergeleitet werden klicken Sie <a href="/"><strong>hier</strong></a>.
+</div>
+
+<script type="text/javascript">
+  $(function() {
+    setTimeout(function() {
+      window.location = "/";
+    }, 10000);
+  });
+</script>
