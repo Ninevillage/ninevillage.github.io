@@ -1,0 +1,62 @@
+---
+layout: page
+title: Team
+permalink: /team/
+nav: true
+weight: 10
+with_angular: true
+extra_js:
+---
+
+<div ng-controller="TeamCtrl">
+  <div class="row">
+    <div class="col-md-4 col-sm-6" ng-repeat="employee in employees">
+      <h4>{( employee.name )}</h4>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  angular.module('NinevillageApp')
+  .controller('TeamCtrl', ['$scope', function($scope) {
+    $scope.employees = [];
+    $scope.employees.push({name: 'Mohammed Neundorf'});
+    $scope.employees.push({name: 'Andreea Varga'});
+  }]);
+</script>
+
+<div class="hidden">
+  <div class="row">
+    <div class="panel panel-default">
+      <div class="panel-body"> 
+        Mohammed Neundorf
+        
+      
+      </div>
+    </div>
+  </div>
+
+* Matt - Inhaber und Entwickler
+* Asin - Sekretärin und Designerin
+
+*** 
+
+#### Fertigkeiten / Kenntnisse
+
+* Programmiersprachen : sehr viele
+* Frameworks : sehr viele
+* Grafik Design
+* 3D Design
+* 3D Modelling
+* Aera- / Level-Design
+
+
+***
+
+> TODO: Mit Styles ausbauen
+
+> TODO: Progress Bars
+
+> TODO: Detailierter
+
+</div>
