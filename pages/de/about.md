@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Über
-permalink: /über/
+permalink: /ueber/
 nav: true
 weight: 9
 ---
