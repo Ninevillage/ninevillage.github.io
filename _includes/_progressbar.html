@@ -1,0 +1,25 @@
+{% if include.param <= 30 %}
+<div class="progress">
+  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="{{ include.param }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ include.param }}%">
+    <span class="sr-only">{{ include.param }}% Complete (warning)</span>
+  </div>
+</div>
+{% endif %}
+
+{% if include.param > 30 and include.param <= 70 %}
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="{{ include.param }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ include.param }}%">
+    <span class="sr-only">{{ include.param }}% Complete (info)</span>
+  </div>
+</div>
+{% endif %}
+
+{% if include.param > 70 %}
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{ include.param }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ include.param }}%">
+    <span class="sr-only">{{ include.param }}% Complete (success)</span>
+  </div>
+</div>
+
+{% endif %}
+
