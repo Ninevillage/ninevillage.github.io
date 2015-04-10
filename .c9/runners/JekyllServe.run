@@ -5,8 +5,8 @@
         "bash", 
         "--login", 
         "-c",
-        "cd $project_path && ls -al && jekyll serve --host $IP --port $port --watch"
+        "cd $project_path && jekyll serve --host $IP --port $port --watch"
     ],
-    "info" : "Serve $project_path",
+    "info": "Your code is running at \\033[01;34m$url\\033[00m.\n\\033[01;31mImportant:\\033[00m use \\033[01;32mprocess.env.PORT\\033[00m as the port and \\033[01;32mprocess.env.IP\\033[00m as the host in your scripts!\n",
     "env" : {}
 }

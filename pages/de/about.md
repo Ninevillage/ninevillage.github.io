@@ -6,48 +6,23 @@ nav: true
 weight: 9
 ---
 
-Seit 2011 entwickelt Ninevillage Software für verschiedene Kunden aus allen möglichen Bereichen. 
+####Hier mal im Schnelldurchlauf unsere Kerninformationen
 
-Ninevillage ist eine Software-Schmiede, eine Software-Werkstatt und ein Software-Labor. 
-Wir entwickeln, reparieren und analysieren Software und helfen so unseren
-Kunden mehr aus ihrer Software rauszuholen.
+* Gegründet September 2011
+* Gegründet von Mohammed <Matt> Neundorf
+* Geplant als Dienstleistungsunternehmen für Mobile App Entwicklung
+* Mobile App Entwicklungsaufträge waren selten, die meisten Waren Web Aufträge
+* Im Fühling 2012 begann Andreea <Asin> Neundorf ihre Tätigkeit als Vize-Chefin und Sekretärin
+* Erste Kooperationen mit anderen Unternehmen begannen im Sommer 2012
+* Frühjahr 2013, beginn von eigenen Projekten und der Arzt verdonnert Matt zu Zwangsurlaub für 4 Wochen wegen totalem Burnout
+* Von Sommer 2013 bis Herbst 2014 war eigentlich (so gut wie) nichts los...
+* Februar 2015 - Der erste neue Mitarbeiter nach 3 Jahren!!!!
+* März 2015 Alpha Release des ersten Games (unzählige Bugs machten uns das Leben zur Hölle)
+* April 2015 ich (Matt) schreibe diese Über uns Seite und bin traurig das ich hier nicht mehr ausrasten durfte...
 
-
-##Was wir machen
-
-#### Software-Schmiede
-
-* Konzeption
-  * Kick Off
-  * Wireframes
-  * Backlog
-* Entwicklung
-  * Erstellung von Feature Paketen (Sprint Inkrement)
-  * CI Design (Mit oder ohne Basis - Bootstrap / Material / Ionic / etc)
-  * Interaktive Verfolgung über interne Management Plattform (Continous Integration, Scrum, Collaboration, Test System, Coverage)
-* Veröffentlichung
-  * Konfiguration von IT Infrastrukturen
-  * Einrichtung und Einbindung von Sozial Netzwerken
-  * SEO, SEM, SMM
-* Abschluss
-  * Review nach jedem Feature Paket
-  * Change Requests
-  * Optionales Monitoring for System, Performance und Analyse (CRO)
-
-#### Software-Werkstatt
-
-* Fehlerbeseitigung
-* Wiederherstellung / Zurücksetzen
-* 24/7 Notdienst
-
-#### Software-Labor
-
-*  Überprüfung von IT Infrastrukturen
-*  Performance Diagnose, Benchmarking, Stress Testing
-*  Applikations-Analyse, Usability
-*  Code Coverage, Integration Testing, E2E Testing
-*  Security Testing (Hacking / DDOS / etc)
 
 ***
 
 > TODO: Mit Styles ausbauen
+
+> TODO: Timeline wäre cool
