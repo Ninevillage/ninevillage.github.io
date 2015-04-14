@@ -40,21 +40,21 @@ weight: 20
               <h4 class="group inner list-group-item-heading reference-name">
                 {{ reference.name }}
               </h4>
-                <p class="group inner list-group-item-text reference-text">
-                  {{ reference.text }}
-                </p>
-                <div class="row">
-                  <div class="col-xs-12 col-md-6">
-                    <p class="lead reference-lead">
-                      {{ reference.lead }}
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <div class="pull-right">
-                      <a class="btn btn-success" href="{{ reference.href }}">Ansehen</a>
-                    </div>
+              <p class="group inner list-group-item-text reference-text">
+                {{ reference.text }}
+              </p>
+              <div class="row">
+                <div class="col-xs-12 col-md-6">
+                  <p class="lead reference-lead">
+                    {{ reference.lead }}
+                  </p>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div class="pull-right">
+                    <a class="btn btn-success" href="{{ reference.href }}">Ansehen</a>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -67,10 +67,7 @@ weight: 20
   $(function() {
     $('#list').click(function(event){event.preventDefault();$('#filtrifyContainer .item').addClass('list-group-item');});
     $('#grid').click(function(event){event.preventDefault();$('#filtrifyContainer .item').removeClass('list-group-item');$('#filtrifyContainer .item').addClass('grid-group-item');});
-    String.prototype.capitalizeFirstLetter = function() {
-      return this.charAt(0).toUpperCase() + this.slice(1);
-    };
-
+    
     var ft = $.filtrify("filtrifyContainer", "filtrifyPlaceHolder", {
       close: true,
       callback : function( query, match, mismatch ) {
@@ -106,9 +103,8 @@ weight: 20
     var textHeight = 0;
     var leadHeight = 0;
     
-    $('.reference .thumbnail').each(function(index, element) {
-      thumbnailHeight = $(element).height() > thumbnailHeight ? $(element).height() : thumbnailHeight;
-      
+    $.each($('.reference .thumbnail'), function(index, element) {
+      //thumbnailHeight = $(element).height() > thumbnailHeight ? $(element).height() : thumbnailHeight;
       var nameElement = $(element).find('.reference-name');
       var textElement = $(element).find('.reference-text');
       var leadElement = $(element).find('.reference-lead');
@@ -118,15 +114,17 @@ weight: 20
       leadHeight = leadElement.height() > leadHeight ? leadElement.height() : leadHeight;
     });
     
-    console.log(thumbnailHeight);
-    console.log(nameHeight);
-    console.log(textHeight);
-    console.log(leadHeight);
-    
-    $('.item .thumbnail').height(thumbnailHeight);
-    $('.item .thumbnail .reference-name').height(nameHeight);
-    $('.item .thumbnail .reference-text').height(textHeight);
-    $('.item .thumbnail .reference-lead').height(leadHeight);
+    setTimeout(function() {
+      //console.log(thumbnailHeight);
+      console.log(nameHeight);
+      console.log(textHeight);
+      console.log(leadHeight);
+      
+      //$('.item .thumbnail').height(thumbnailHeight);
+      $('.item .thumbnail .reference-name').height(nameHeight);
+      $('.item .thumbnail .reference-text').height(textHeight);
+      $('.item .thumbnail .reference-lead').height(leadHeight);
+    }, 10);
   });
 </script>
 
