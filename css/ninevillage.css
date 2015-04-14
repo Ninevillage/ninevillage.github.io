@@ -36,41 +36,6 @@ footer li {
   margin-right: 1.5em;
 }
 
-@media (max-device-width:480px) {
-}
-
-/* REFERENCES */
-/*.references {*/
-/*    list-style: outside none none;*/
-/*    padding: 0;*/
-/*}*/
-/*.references > li {*/
-/*    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);*/
-/*    background-color: #54b4eb;*/
-/*    border-radius: 3px;*/
-/*    display: inline-block;*/
-/*    font-size: 85%;*/
-/*    margin: 1px;*/
-/*    max-width: 122px;*/
-/*    padding: 5px;*/
-/*    vertical-align: top;*/
-/*    height: 270px;*/
-/*}*/
-
-/*.references > li > h4 {*/
-/*    font-size: 10pt;*/
-/*    height: 40px;*/
-/*    display: block;*/
-/*    margin: 4px;*/
-/*    color: white;*/
-/*}*/
-
-/*.references > li > img {*/
-/*    height: 168px;*/
-/*    margin: 5px 0;*/
-/*    width: 113px;*/
-/*}*/
-
 /* TIMELINE */
 
 .timeline {
