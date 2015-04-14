@@ -11,7 +11,7 @@ weight: 20
 <div class="row">
   <div class="col-md-8 col-sm-12 col-xs-12">
     <div class="pull-left">
-      <a class="btn btn-primary btn-sm" href="#" id="reset" style="displa: none;">Zurücksetzen</a>
+      <a class="btn btn-primary btn-sm disabled" href="#" id="reset">Zurücksetzen</a>
       <div class="btn-group">
         <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
         </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
@@ -76,6 +76,7 @@ weight: 20
       callback : function( query, match, mismatch ) {
         if ( !mismatch.length ) {
           $("#legend").html("<i>Alle werden angezeigt.</i>");
+          $("a#reset").addClass('disabled');
         } else {
           var category, tags, i, tag, legend = "<h4>Angezeigt:</h4>";
           for ( category in query ) {
@@ -91,6 +92,7 @@ weight: 20
           };
           legend += "<p><i>" + match.length + " Referenz" + (match.length !== 1 ? "en" : "") + " gefunden.</i></p>";
           $("#legend").html( legend );
+          $("a#reset").removeClass('disabled');
         };
       }
     });
