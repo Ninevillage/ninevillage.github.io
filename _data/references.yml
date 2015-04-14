@@ -2,11 +2,13 @@
   attributes: Kommerziell, Website
   status: Abgeschlossen
   img: /images/refthumb.gif
+  text: Lorem Ipsum
   
 - name: gtracker.de
   attributes: Kommerziell, Website
   status: Abgeschlossen
   img: /images/refthumb.gif
+  text: Lorem Ipsum
   
 - name: lutz-heber.de
   attributes: Kommerziell, Website

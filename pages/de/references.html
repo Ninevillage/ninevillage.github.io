@@ -33,19 +33,19 @@ weight: 20
   <div class="col-md-12">
     <div id="filtrifyContainer" class="references row list-group">
       {% for reference in site.data.references %}
-        <div class="item  col-xs-4 col-lg-4" data-eigenschaften="{{ reference.attributes }}" data-status="{{ reference.status }}">
+        <div class="item col-xs-4 col-lg-4 reference" data-eigenschaften="{{ reference.attributes }}" data-status="{{ reference.status }}">
           <div class="thumbnail">
             <img class="group list-group-image" src="{{ reference.img | prepend: site.baseurl }}" alt="" />
             <div class="caption">
-              <h4 class="group inner list-group-item-heading">
+              <h4 class="group inner list-group-item-heading reference-name">
                 {{ reference.name }}
               </h4>
-                <p class="group inner list-group-item-text">
+                <p class="group inner list-group-item-text reference-text">
                   {{ reference.text }}
                 </p>
                 <div class="row">
                   <div class="col-xs-12 col-md-6">
-                    <p class="lead">
+                    <p class="lead reference-lead">
                       {{ reference.lead }}
                     </p>
                   </div>
@@ -100,6 +100,28 @@ weight: 20
     $("a#reset").click(function() {
         ft.reset();
     });
+    
+    var thumbnailHeight = 0;
+    var nameHeight = 0;
+    var textHeight = 0;
+    var leadHeight = 0;
+    
+    $('.reference .thumbnail').each(function(index, element) {
+      thumbnailHeight = $(element).height() > thumbnailHeight ? $(element).height() : thumbnailHeight;
+      
+      var nameElement = $(element).find('.reference-name');
+      var textElement = $(element).find('.reference-text');
+      var leadElement = $(element).find('.reference-lead');
+      
+      nameHeight = nameElement.height() > nameHeight ? nameElement.height() : nameHeight;
+      textHeight = textElement.height() > textHeight ? textElement.height() : textHeight;
+      leadHeight = leadElement.height() > leadHeight ? leadElement.height() : leadHeight;
+    });
+    
+    $('.item .thumbnail').height(thumbnailHeight);
+    $('.item .thumbnail .reference-name').height(nameHeight);
+    $('.item .thumbnail .reference-text').height(textHeight);
+    $('.item .thumbnail .reference-lead').height(leadHeight);
   });
 </script>
 
