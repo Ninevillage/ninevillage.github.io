@@ -31,7 +31,7 @@ weight: 20
 <br/>
 <div class="row">
   <div class="col-md-12">
-    <div id="filtrifyContainer" class="references row list-group">
+    <div id="filtrifyContainer" class="gridview row list-group">
       {% for reference in site.data.references %}
         <div class="item col-xs-4 col-lg-4 reference" data-eigenschaften="{{ reference.attributes }}" data-status="{{ reference.status }}">
           <div class="thumbnail">
@@ -103,12 +103,13 @@ weight: 20
     var textHeight = 0;
     var leadHeight = 0;
     
-    $.each($('.reference .thumbnail'), function(index, element) {
-      //thumbnailHeight = $(element).height() > thumbnailHeight ? $(element).height() : thumbnailHeight;
+    $.each($('.gridview .item'), function(index, element) {
+      //var thumbnailElement = $(element).find('.thumbnail');
       var nameElement = $(element).find('.reference-name');
       var textElement = $(element).find('.reference-text');
       var leadElement = $(element).find('.reference-lead');
       
+      //thumbnailHeight = thumbnailElement.height() > thumbnailHeight ? thumbnailElement.height() : thumbnailHeight;
       nameHeight = nameElement.height() > nameHeight ? nameElement.height() : nameHeight;
       textHeight = textElement.height() > textHeight ? textElement.height() : textHeight;
       leadHeight = leadElement.height() > leadHeight ? leadElement.height() : leadHeight;
@@ -120,10 +121,10 @@ weight: 20
       console.log(textHeight);
       console.log(leadHeight);
       
-      //$('.item .thumbnail').height(thumbnailHeight);
-      $('.item .thumbnail .reference-name').height(nameHeight);
-      $('.item .thumbnail .reference-text').height(textHeight);
-      $('.item .thumbnail .reference-lead').height(leadHeight);
+      //$('.gridview .item .thumbnail').height(thumbnailHeight);
+      $('.gridview .item .reference-name').height(nameHeight);
+      $('.gridview .item .reference-text').height(textHeight);
+      $('.gridview .item .reference-lead').height(leadHeight);
     }, 10);
   });
 </script>

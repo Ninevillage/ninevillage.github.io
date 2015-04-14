@@ -1,0 +1,57 @@
+.gridview .glyphicon { margin-right:5px; }
+.gridview .thumbnail
+{
+    margin-bottom: 20px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.gridview .item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.gridview .item.list-group-item:nth-of-type(odd):hover,.gridview .item.list-group-item:hover
+{
+    background: #428bca;
+}
+
+.gridview .item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.gridview .item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+}
+.gridview .item.list-group-item .caption
+{
+    padding: 9px 9px 0px 9px;
+}
+.gridview .item.list-group-item:nth-of-type(odd)
+{
+    background: #eeeeee;
+}
+
+.gridview .item.list-group-item:before, .gridview .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.gridview .item.list-group-item img
+{
+    float: left;
+}
+.gridview .item.list-group-item:after
+{
+    clear: both;
+}
+.gridview .list-group-item-text
+{
+    margin: 0 0 11px;
+}
