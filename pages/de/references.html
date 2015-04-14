@@ -1,0 +1,114 @@
+---
+layout: page
+title: Referenzen
+permalink: /referenzen/
+nav: true
+weight: 20
+---
+
+
+
+<div class="row">
+  <div class="col-md-8 col-sm-12 col-xs-12">
+    <div class="pull-left">
+      <a class="btn btn-primary btn-sm" href="#" id="reset" style="displa: none;">Zurücksetzen</a>
+      <div class="btn-group">
+        <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+        </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
+            class="glyphicon glyphicon-th"></span>Grid</a>
+      </div>
+    </div>
+    <div class="pull-right">
+      <div id="filtrifyPlaceHolder" style="margin-top: 7px;"></div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-12 col-xs-12">
+    <div id="legend" style="margin-top: 5px;">
+      <i>Alle werden angezeigt.</i>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col-md-12">
+    <div id="filtrifyContainer" class="references row list-group">
+      {% for reference in site.data.references %}
+        <div class="item  col-xs-4 col-lg-4" data-eigenschaften="{{ reference.attributes }}" data-status="{{ reference.status }}">
+          <div class="thumbnail">
+            <img class="group list-group-image" src="{{ reference.img | prepend: site.baseurl }}" alt="" />
+            <div class="caption">
+              <h4 class="group inner list-group-item-heading">
+                {{ reference.name }}
+              </h4>
+                <p class="group inner list-group-item-text">
+                  {{ reference.text }}
+                </p>
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <p class="lead">
+                      {{ reference.lead }}
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="pull-right">
+                      <a class="btn btn-success" href="{{ reference.href }}">Ansehen</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(function() {
+    $('#list').click(function(event){event.preventDefault();$('#filtrifyContainer .item').addClass('list-group-item');});
+    $('#grid').click(function(event){event.preventDefault();$('#filtrifyContainer .item').removeClass('list-group-item');$('#filtrifyContainer .item').addClass('grid-group-item');});
+    String.prototype.capitalizeFirstLetter = function() {
+      return this.charAt(0).toUpperCase() + this.slice(1);
+    };
+
+    var ft = $.filtrify("filtrifyContainer", "filtrifyPlaceHolder", {
+      close: true,
+      callback : function( query, match, mismatch ) {
+        if ( !mismatch.length ) {
+          $("#legend").html("<i>Alle werden angezeigt.</i>");
+        } else {
+          var category, tags, i, tag, legend = "<h4>Angezeigt:</h4>";
+          for ( category in query ) {
+            tags = query[category];
+            if ( tags.length ) {
+              legend += "<p><span>" + category.capitalizeFirstLetter() + ":</span>";
+              for ( i = 0; i < tags.length; i++ ) {
+                tag = tags[i];
+                legend += "<em>" + tag + (i+1 != tags.length?', ':'') + "</em>";
+              };
+              legend += "</p>";
+            };
+          };
+          legend += "<p><i>" + match.length + " Referenz" + (match.length !== 1 ? "en" : "") + " gefunden.</i></p>";
+          $("#legend").html( legend );
+        };
+      }
+    });
+    
+    $("a#reset").click(function() {
+        ft.reset();
+    });
+  });
+</script>
+
+<hr/>
+
+<blockquote>Projektzähler für Projekte ohne Freigabe zur Veröffentlichung: 57</blockquote>
+
+<hr/>
+
+<blockquote>TODO: Mit Styles ausbauen</blockquote>
+
+<blockquote>TODO: Grafiken und Links</blockquote>
+
+<blockquote>TODO: Projektbeschreibungen</blockquote>
