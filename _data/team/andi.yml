@@ -4,7 +4,9 @@ attributes:
   eigenschaften: 3D, Design
   status: Angestellt
 img: /images/unnamed.png
-text: Lorem Ipsum
+text: >
+  "It is possible."
+lead: Der Zauberer
 href: /team/andi/
 
 profile:
