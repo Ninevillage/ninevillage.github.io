@@ -387,4 +387,4 @@ Disallow: /
 User-agent: ScoutJet
 Disallow: /
 
-Sitemap: http://app.wistia.com/sitemaps/14361.xml
+Sitemap: http://www.ninevillage.com/sitemap.txt
