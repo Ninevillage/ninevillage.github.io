@@ -1,0 +1,57 @@
+{% assign data = include.data %}
+{% assign name = include.name %}
+
+<div class="row">
+	<div class="col-md-12 simple-carousel">
+    <div id="{{ name }}" class="carousel slide">
+       
+      <ol class="carousel-indicators">
+        {% for item in data %}
+          {% assign index_mod = forloop.index | modulo: 4 %}
+          {% if index_mod == 0 %}
+            <li data-target="#{{ name }}" data-slide-to="{{ forloop.index | divided_by:4 | minus:1 }}" class="{% if item == data | first %}active{% endif %}"></li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+       
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+          
+        {% for item in data %}
+          {% assign index_mod = forloop.index | modulo: 4 %}
+          {% if index_mod == 0 %}
+            <div class="item {% if forloop.index == 4%}active {% endif %}">
+              <div class="row">
+                {% assign sub_index = forloop.index | minus:4 %}
+                <!--{{ sub_index }}<br/>-->
+                {% for item in data limit:4 offset:sub_index %}
+                  <!-- {{ forloop.index }}<br/>
+                  {{ item }}<br/> -->
+                  
+                  <div class="col-md-3">
+                    <a href="{{ item.href }}" class="thumbnail" title="{{ item.name }}">
+                      <img src="{{ item.img }}" alt="{{ item.name }}" style="max-width:100%;">
+                    </a>
+                  </div>
+                  
+                
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+         
+      </div><!--.carousel-inner-->
+      <a data-slide="prev" href="#{{ name }}" class="left carousel-control">‹</a>
+      <a data-slide="next" href="#{{ name }}" class="right carousel-control">›</a>
+    </div><!--.Carousel-->
+	</div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#{{ name }}').carousel({
+        interval: 5000
+    })
+});
+</script>

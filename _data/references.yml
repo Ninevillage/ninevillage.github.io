@@ -1,4 +1,5 @@
 - name: simple-fax.de
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Kommerziell, Website
     status: Abgeschlossen
@@ -6,6 +7,7 @@
   text: Lorem Ipsum
   
 - name: gtracker.de
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Kommerziell, Website
     status: Abgeschlossen
@@ -13,138 +15,161 @@
   text: Lorem Ipsum
   
 - name: lutz-heber.de
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Kommerziell, Website
     status: Abgeschlossen
   img: /images/refthumb.gif
   
 - name: iSpoof
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Kommerziell, iOS App
     status: Abgeschlossen
   img: /images/refthumb.gif
   
 - name: The Consultant - The first mission
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Kommerziell, Comic Book
     status: Offen
   img: /images/refthumb.gif
   
 - name: The Consultant - The secret garden
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Kommerziell, Game, Unity3D
     status: Offen
   img: /images/refthumb.gif
   
 - name: The Consultant - The legacy of Holmes
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Kommerziell, Game, Unity3D
     status: Offen
   img: /images/refthumb.gif
   
 - name: These Damn Turrets
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Kommerziell, Game, Unity3D
     status: Offen
   img: /images/refthumb.gif
   
 - name: Bishojo
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, Web App
     status: Offen
   img: /images/refthumb.gif
   
 - name: Gamer
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, Web App
     status: Offen
   img: /images/refthumb.gif
   
 - name: HOGD
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, Web App
     status: Offen
   img: /images/refthumb.gif
   
 - name: Sonea
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, Web App
     status: Offen
   img: /images/refthumb.gif
   
 - name: Auraya
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, Web App
     status: Offen
   img: /images/refthumb.gif
   
 - name: Mairae
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, Web App
     status: Offen
   img: /images/refthumb.gif
   
 - name: Travis CI iOS
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, iOS App
     status: Offen
   img: /images/refthumb.gif
   
 - name: Travis CI Anroid
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, Android App
     status: Offen
   img: /images/refthumb.gif
   
 - name: CodeClimate iOS
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, iOS App
     status: Offen
   img: /images/refthumb.gif
   
 - name: CodeClimate Android
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, Android App
     status: Offen
   img: /images/refthumb.gif
   
 - name: CodeClimate Chrome
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, Chrome App
     status: Offen
   img: /images/refthumb.gif
   
 - name: Kogedrama
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, Web App
     status: Offen
   img: /images/refthumb.gif
   
 - name: Tea Party Network
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, Web App
     status: Offen
   img: /images/refthumb.gif
   
 - name: Screenmaster
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, Desktop App
     status: Offen
   img: /images/refthumb.gif
   
 - name: 4LoL iOS
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, iOS App
     status: Offen
   img: /images/refthumb.gif
   
 - name: 4LoL Android
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, Android App
     status: Offen
   img: /images/refthumb.gif
   
 - name: RailsUtilities
+  date: '2012-01-01 00:00:00 +1'
   attributes:
     eigenschaften: Open Source, Web App
     status: Offen
