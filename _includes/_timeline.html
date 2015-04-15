@@ -1,8 +1,39 @@
+{% assign timeline_datas = include.data | sort: 'date' %}
+
 <div class="container">
     <div class="page-header">
         <h1 id="timeline">Timeline</h1>
     </div>
     <ul class="timeline">
+        {% for data in timeline_datas %}
+            <li
+            {% assign index_mod = forloop.index | modulo: 2 %}
+            {% if index_mod == 0 %}
+                class="timeline-inverted"
+            {% else %}
+                class=""
+            {% endif %}
+            >
+                <div class="timeline-badge {{ data.badge }}"><i class="{{ data.icon }}"></i></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">{{ data.title }}</h4>
+                        <p>
+                            <small class="text-muted">
+                                <i class="glyphicon glyphicon-time"></i> {{ data.date | date: '%d. %B %Y' }}
+                            </small>
+                        </p>
+                    </div>
+                    
+                    <div class="timeline-body">
+                        {{ data.body }}
+                    </div>
+                </div>
+            </li>
+            
+
+        {% endfor %}
+        
         <!--<li>-->
         <!--  <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>-->
         <!--  <div class="timeline-panel">-->
