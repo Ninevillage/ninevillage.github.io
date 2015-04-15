@@ -1,0 +1,24 @@
+name: Andi
+attributes:
+  position: Mitarbeiter
+  eigenschaften: 3D, Design
+  status: Angestellt
+img: /images/unnamed.png
+text: Lorem Ipsum
+href: /team/andi/
+
+profile:
+  email: ac@ninevillage.com
+  text: >
+    Andreas ist 3D Artist und Mediendesigner bei Ninevillage.
+  name: Andreas
+  nickname: Andi
+  age: 21
+  position: 3D Artist und Mediendesigner
+  hobbies: Unbekannt
+  languages: Deutsch, Englisch, Polnisch
+  
+  knowledges:
+    'Photoshop': 90
+    'Alchemy': 20
+    'Blender': 50

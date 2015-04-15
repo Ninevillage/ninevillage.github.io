@@ -1,127 +1,152 @@
 - name: simple-fax.de
-  attributes: Kommerziell, Website
-  status: Abgeschlossen
+  attributes:
+    eigenschaften: Kommerziell, Website
+    status: Abgeschlossen
   img: /images/refthumb.gif
   text: Lorem Ipsum
   
 - name: gtracker.de
-  attributes: Kommerziell, Website
-  status: Abgeschlossen
+  attributes:
+    eigenschaften: Kommerziell, Website
+    status: Abgeschlossen
   img: /images/refthumb.gif
   text: Lorem Ipsum
   
 - name: lutz-heber.de
-  attributes: Kommerziell, Website
-  status: Abgeschlossen
+  attributes:
+    eigenschaften: Kommerziell, Website
+    status: Abgeschlossen
   img: /images/refthumb.gif
   
 - name: iSpoof
-  attributes: Kommerziell, iOS App
-  status: Abgeschlossen
+  attributes:
+    eigenschaften: Kommerziell, iOS App
+    status: Abgeschlossen
   img: /images/refthumb.gif
   
 - name: The Consultant - The first mission
-  attributes: Kommerziell, Comic Book
-  status: Offen
+  attributes:
+    eigenschaften: Kommerziell, Comic Book
+    status: Offen
   img: /images/refthumb.gif
   
 - name: The Consultant - The secret garden
-  attributes: Kommerziell, Game, Unity3D
-  status: Offen
+  attributes:
+    eigenschaften: Kommerziell, Game, Unity3D
+    status: Offen
   img: /images/refthumb.gif
   
 - name: The Consultant - The legacy of Holmes
-  attributes: Kommerziell, Game, Unity3D
-  status: Offen
+  attributes:
+    eigenschaften: Kommerziell, Game, Unity3D
+    status: Offen
   img: /images/refthumb.gif
   
 - name: These Damn Turrets
-  attributes: Kommerziell, Game, Unity3D
-  status: Offen
+  attributes:
+    eigenschaften: Kommerziell, Game, Unity3D
+    status: Offen
   img: /images/refthumb.gif
   
 - name: Bishojo
-  attributes: Open Source, Web App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, Web App
+    status: Offen
   img: /images/refthumb.gif
   
 - name: Gamer
-  attributes: Open Source, Web App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, Web App
+    status: Offen
   img: /images/refthumb.gif
   
 - name: HOGD
-  attributes: Open Source, Web App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, Web App
+    status: Offen
   img: /images/refthumb.gif
   
 - name: Sonea
-  attributes: Open Source, Web App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, Web App
+    status: Offen
   img: /images/refthumb.gif
   
 - name: Auraya
-  attributes: Open Source, Web App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, Web App
+    status: Offen
   img: /images/refthumb.gif
   
 - name: Mairae
-  attributes: Open Source, Web App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, Web App
+    status: Offen
   img: /images/refthumb.gif
   
 - name: Travis CI iOS
-  attributes: Open Source, iOS App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, iOS App
+    status: Offen
   img: /images/refthumb.gif
   
 - name: Travis CI Anroid
-  attributes: Open Source, Android App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, Android App
+    status: Offen
   img: /images/refthumb.gif
   
 - name: CodeClimate iOS
-  attributes: Open Source, iOS App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, iOS App
+    status: Offen
   img: /images/refthumb.gif
   
 - name: CodeClimate Android
-  attributes: Open Source, Android App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, Android App
+    status: Offen
   img: /images/refthumb.gif
   
 - name: CodeClimate Chrome
-  attributes: Open Source, Chrome App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, Chrome App
+    status: Offen
   img: /images/refthumb.gif
   
 - name: Kogedrama
-  attributes: Open Source, Web App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, Web App
+    status: Offen
   img: /images/refthumb.gif
   
 - name: Tea Party Network
-  attributes: Open Source, Web App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, Web App
+    status: Offen
   img: /images/refthumb.gif
   
 - name: Screenmaster
-  attributes: Open Source, Desktop App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, Desktop App
+    status: Offen
   img: /images/refthumb.gif
   
 - name: 4LoL iOS
-  attributes: Open Source, iOS App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, iOS App
+    status: Offen
   img: /images/refthumb.gif
   
 - name: 4LoL Android
-  attributes: Open Source, Android App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, Android App
+    status: Offen
   img: /images/refthumb.gif
   
 - name: RailsUtilities
-  attributes: Open Source, Web App
-  status: Offen
+  attributes:
+    eigenschaften: Open Source, Web App
+    status: Offen
   img: /images/refthumb.gif
   

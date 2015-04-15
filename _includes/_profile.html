@@ -1,0 +1,64 @@
+{%assign profile = include.mate.profile %}
+
+<div id="profile">
+  <div class="row">
+    <div class="col-md-7">
+      <p>
+        {{ profile.text }}
+      </p>
+    </div>
+    <div class="col-md-5">
+      <dl class="dl-horizontal">
+        
+        <dt><h4>Profil</h4></dt>
+        <dd></dd>
+        
+        <dt>Name</dt>
+        <dd>{{ profile.name }}</dd>
+        
+        <dt>Nickname</dt>
+        <dd>{{ profile.nickname }}</dd>
+        
+        <dt>Position</dt>
+        <dd>{{ profile.position }}</dd>
+        
+        <dt>Alter</dt>
+        <dd>{{ profile.age }}</dd>
+        
+        <dt>Hobbies</dt>
+        <dd>{{ profile.hobbies }}</dd>
+        
+        <dt>Sprachen</dt>
+        <dd>{{ profile.languages }}</dd>
+        
+        {% for other in profile.other %}
+          <dt>{{ other[0] }}</dt>
+          <dd>{{ other[1] }}</dd>
+        {% endfor %}
+      </dl>
+    </div>
+  </div>
+  
+  <br/>
+  
+  <div class="row">
+    <div class="col-md-2">
+      <h3 class="profile-knowledges-heading">Kenntnisse</h3>
+    </div>
+    <div class="col-md-10">
+      <form>
+        <input type="text" class="form-control profile-filter" id="profileFilter" placeholder="Filtern..."/>
+      </form>
+    </div>
+  </div>
+  
+  <div class="profile-knowledges row list-group">
+    {% for knowledge in profile.knowledges %}
+      <div class="item col-xs-3 col-lg-3 knowledge">
+        <strong class="name">{{ knowledge[0] }}</strong>
+        {% assign progressbar_value = knowledge[1] %}
+        {% include _progressbar.html param=progressbar_value %}
+      </div>
+    {% endfor %}
+  </div>
+</div>

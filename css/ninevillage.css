@@ -36,6 +36,15 @@ footer li {
   margin-right: 1.5em;
 }
 
+/* PROFILE */
+.profile-knowledges-heading {
+    line-height: 36px;
+}
+.profile-filter {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
 /* TIMELINE */
 
 .timeline {

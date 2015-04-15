@@ -1,0 +1,94 @@
+name: Matt
+attributes:
+  position: Chef
+  eigenschaften: Programmierung
+  status: Angestellt, Gründer
+img: /images/team/matt2.png
+text: Lorem Ipsum
+href: /team/matt/
+
+profile:
+  email: mn@ninevillage.com
+  text: >
+    Mohammed Neundorf ist Gründer und Inhaber von Ninevillage und ist für 
+    das entwickeln der Software zuständig.
+    <br/>
+    Er entwickelt seit vielen Jahren Software in verschiedenen Bereichen, wie 
+    Industrie, Web und Spiele.
+    <br/>
+    Ebenfalls unterstützt er bei der Entwicklung von verschiedenen Open 
+    Source Projekten.
+  name: Mohammed R.W. Neundorf
+  nickname: Matt
+  age: 28
+  position: Inhaber und Entwickler
+  hobbies: Lesen, Kino, Videospiele
+  languages: Deutsch, Englisch
+  
+  knowledges:
+    'Java / Groovy': 90
+    'C/C++': 60
+    'PHP': 80
+    'Ruby': 80
+    'Python': 75
+    'C#': 60
+    'Basic': 60
+    'Objective-C': 80
+    'HTML': 90
+    'CSS': 80
+    'JavaScript / CoffeeScript': 90
+    'Grails': 60
+    'Rails': 80
+    'Sails': 60
+    'GWT': 50
+    'PrimeFaces': 20
+    'CakePHP': 30
+    'Zend': 60
+    'CodeIgniter': 60
+    'Cocoa / Cocoa Touch': 70
+    'Android': 50
+    'Express': 90
+    'Sinatra': 40
+    'Django': 50
+    'Flask': 40
+    'Phonegap': 50
+    'Jekyll': 100
+    'Wordpress': 70
+    'Joomla': 60
+    'Drupal': 30
+    'Magento': 50
+    'Shopware': 40
+    'Gambio': 40
+    'MySQL': 80
+    'PostgreSQL': 60
+    'MSSQL': 40
+    'Oracle': 50
+    'SQLite': 90
+    'MongoDB': 80
+    'Redis': 70
+    'CouchDB': 40
+    'Neo4J': 20
+    'GORM': 40
+    'CoreData': 80
+    'ActiveRecord': 80
+    'Windows': 50
+    'OSX': 75
+    'Linux': 70
+    'Office': 50
+    'Eclipse': 50
+    'Netbeans': 20
+    'IntelliJ IDEA': 80
+    'RubyMine / WebStorm / AppCode': 80
+    'Sublime Text': 100
+    'Brackets': 70
+    'Atom': 40
+    'Notepad++': 70
+    'VIM': 50
+    'Cloud 9': 80
+    'Apache': 60
+    'NGINX': 70
+    'Xcode': 90
+    'SEO': 60
+    'SEM': 30
+    'CRO': 70
+    'SMM': 50

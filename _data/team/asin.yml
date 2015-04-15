@@ -1,0 +1,36 @@
+name: Asin
+attributes:
+  position: Mitarbeiter
+  eigenschaften: Verwaltung, Design
+  status: Angestellt
+img: /images/team/asin.png
+text: Lorem Ipsum
+href: /team/asin/
+
+profile:
+  email: an@ninevillage.com
+  text: >
+    Andreea Neundorf ist Sekretärin und Designerin bei Ninevillage.
+    <br/>
+    Geschickt kämpft sie sich durch unseren Papierkrieg und gestaltet
+    Oberflächen für unsere Software.
+    <br/>
+    Sie hat das Ninevillage-Logo kreiert und bereichert unser Team
+    mit ihrer Kreativität.
+  name: Andreea Neundorf
+  nickname: Asin
+  age: 28
+  position: Sekretärin und Designerin
+  hobbies: Lesen, Kino, Let's plays
+  languages: Deutsch, Englisch, Rumänisch
+  
+  knowledges:
+    'Digitale Zeichnen': 90
+    'Technisches Zeichnen': 60
+    'Manga': 90
+    'HTML/CSS': 50
+    'Flash': 50
+    'Photoshop': 90
+    'Illustrator': 90
+    'AutoCAD': 70
+    'Office Word/Excel/PowerPoint': 70

@@ -1,0 +1,88 @@
+<div id="{{ include.gridid }}"> <!-- style="display: none;" -->
+  <div class="row">
+    <div class="col-md-8 col-sm-12 col-xs-12">
+      
+      <div class="pull-left">
+        <a class="btn btn-primary btn-sm disabled" href="" id="{{ include.gridid }}-reset">Zurücksetzen</a>
+        <div class="btn-group">
+          <a href="" id="{{ include.gridid }}-list" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-th-list"></span>
+            List
+          </a>
+          <a href="" id="{{ include.gridid }}-grid" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-th"></span>
+            Grid
+          </a>
+        </div>
+      </div>
+      
+      <div class="pull-right">
+        <div id="{{ include.gridid }}-placeholder" style="margin-top: 7px;"></div>
+      </div>
+      
+    </div>
+    
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      
+      <div id="{{ include.gridid }}-legend" style="margin-top: 5px;">
+        <i>Alle werden angezeigt.</i>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <br/>
+  
+  <div class="row">
+    <div class="col-md-12">
+      <div id="{{ include.gridid }}-container" class="gridview row list-group">
+        
+        {% for data_hash in include.griddata %}
+          {% if include.datahash %}
+            {% assign data = data_hash[1] %}
+          {% else %}
+            {% assign data = data_hash %}
+          {% endif %}
+        
+          <div class="item col-xs-4 col-lg-4 reference" 
+          {% for attribute in data.attributes %}
+            data-{{ attribute[0] }}="{{ attribute[1] }}"
+          {% endfor %}
+          >
+            <div class="thumbnail">
+              <img class="group list-group-image" src="{{ data.img | prepend: site.baseurl }}" width="400" alt="" />
+              <div class="caption">
+                <h4 class="group inner list-group-item-heading">
+                  {{ data.name }}
+                </h4>
+                <p class="group inner list-group-item-text">
+                  {{ data.text }}
+                </p>
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <p class="lead">
+                      {{ data.lead }}
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="pull-right">
+                      <a class="btn btn-success" href="{{ data.href }}">Ansehen</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(function() {
+    var grid = createGrid("{{ include.gridid }}");
+  });
+</script>
