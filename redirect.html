@@ -1,0 +1,28 @@
+---
+layout: page
+title: Weiterleitung...
+permalink: /redirect/
+---
+
+<p>
+  Sie werden in kürze weitergeleitet. Sollte die weiterleitung nicht funktionieren, klicken Sie bitte 
+  <a href="#" id="target">hier</a>
+</p>
+
+
+<script type="text/javascript">
+  function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+      return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+  
+  var target = getParameterByName("target");
+  $('#target').attr('href', target);
+  setTimeout(function() {
+    // window.location = target;
+  }, 3000);
+  
+</script>
+
