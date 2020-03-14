@@ -21,9 +21,9 @@
           {% for node in pages %}
             {% if node.title and node.nav %}
               {% if page.url == node.url %}
-                <li class="active"><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+                <li class="active"><a href="{{ node.url | prepend: site.baseurl }}">{{ node.navtitle | default: node.title }}</a></li>
               {% else %}
-                <li><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+                <li><a href="{{ node.url | prepend: site.baseurl }}">{{ node.navtitle | default: node.title }}</a></li>
               {% endif %}
             {% endif %}
           {% endfor %}
@@ -33,9 +33,9 @@
           {% for node in pages %}
             {% if node.title and node.rightnav %}
               {% if page.url == node.url %}
-                <li class="active"><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+                <li class="active"><a href="{{ node.url | prepend: site.baseurl }}">{{ node.navtitle | default: node.title }}</a></li>
               {% else %}
-                <li><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+                <li><a href="{{ node.url | prepend: site.baseurl }}">{{ node.navtitle | default: node.title }}</a></li>
               {% endif %}
             {% endif %}
           {% endfor %}
